@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CFL - Cricket Fantasy League | Cricket Game Simulation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/logos/fc.png">
+
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyA8IO-TLuR2IUeKoHLzj94fU8GjNw0ToC4" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="top-div">
+            <div id="header-news-div">
+                <marquee direction="right" id="header-news">Sammamish Player Draft Starts <span class="accent">Soon</span>! Enroll/Log-In Quick!</marquee>
+            </div>
+            <div id="navbar">
+                <div id="navbar-header-div">
+                    <img src="icons/cricket.svg" alt="Sumthing">
+                    <h1>Cricket Fantasy League</h1>
+                </div>
+                <button id="dashboard-btn" onclick="window.location.replace('login');">Login / Signup</button>
+                <img src="icons/avatars/12.svg" alt="" id="pfp">
+                <img src="icons/shop.svg" alt="" id="cart">
+                <img src="icons/darkinactive.svg" alt="" id="settings" onclick="toggleTheme()">
+            </div>
+        </div>
+        <div id="main-div">
+            <div id="main-header-div">
+                <h1>Play Cricket Fantasy League <span class="accent">For Free!</span></h1>
+                <p>Brought to you by BitByte Inc.</p>
+            </div>
+            <div id="main-comments-div">
+                <div class="comment">
+                    <div id="comment-img-div">
+                        <img src="" alt="" class="comment-img">
+                        <h1 class="comment-name">Adrian</h1>
+                    </div>
+                    <div class="comment-div">
+                        <div class="star-div"></div>
+                        <h1 id="comment-header-1">Amazing Support</h1>
+                        <p id="comment-para-1"></p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div id="comment-img-div">
+                        <img src="" alt="" class="comment-img">
+                        <h1 class="comment-name">Hayden</h1>
+                    </div>
+                    <div class="comment-div">
+                        <div class="star-div"></div>
+                        <h1 id="comment-header-2">Premium Product</h1>
+                        <p id="comment-para-2"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="fantasy-features">
+            <div id="fantasy-graphic">
+                <img src="icons/cricket.svg" alt="">
+            </div>
+            <div id="fantasy-features-parent">
+                <h1>Premium Fantasy Cricket Like <span class="accent-2">Never Before</span>!</h1>
+                <p>Feature-Rich Fantasy Cricket Game Worldwide!</p>
+                <div id="fantasy-feature-list">
+                    <div class="fantasy-feature">
+                        <div class="fantasy-feature-icon">
+                            <img src="icons/math.svg">
+                        </div>
+                        <p class="fantasy-feature-para">Advanced Calculations</p>
+                    </div>
+                    <div class="fantasy-feature">
+                        <div class="fantasy-feature-icon">
+                            <img src="icons/friends.svg">
+                        </div>
+                        <p class="fantasy-feature-para">Friendship Support and Trading</p>
+                    </div>
+                    <div class="fantasy-feature">
+                        <div class="fantasy-feature-icon">
+                            <img src="icons/globe.svg">
+                        </div>
+                        <p class="fantasy-feature-para">Global Connections</p>
+                    </div>
+                    <div class="fantasy-feature">
+                        <div class="fantasy-feature-icon">
+                            <img src="icons/trophy.svg">
+                        </div>
+                        <p class="fantasy-feature-para">Trophies and Awards</p>
+                    </div>
+                    <div class="fantasy-feature">
+                        <div class="fantasy-feature-icon">
+                            <img src="icons/money.svg">
+                        </div>
+                        <p class="fantasy-feature-para">Win Real Life Money</p>
+                    </div>
+                    <div class="fantasy-feature">
+                        <div class="fantasy-feature-icon">
+                            <img src="icons/tv.svg">
+                        </div>
+                        <p class="fantasy-feature-para">Watch Match Highlights</p>
+                    </div>
+                    <div class="fantasy-feature">
+                        <div class="fantasy-feature-icon">
+                            <img src="icons/customize.svg">
+                        </div>
+                        <p class="fantasy-feature-para">Extreme Customizability</p>
+                    </div>
+                    <div class="fantasy-feature">
+                        <div class="fantasy-feature-icon">
+                            <img src="icons/secure.svg">
+                        </div>
+                        <p class="fantasy-feature-para">Ultimate Security System</p>
+                    </div>
+                    <div class="fantasy-feature">
+                        <div class="fantasy-feature-icon">
+                            <img src="icons/accessibility.svg">
+                        </div>
+                        <p class="fantasy-feature-para">Accessibility Ready</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="fantasy-instructions">
+            <div id="fantasy-instructions-header">
+                <h1>How do you play <span class="accent-4">Fantasy Cricket</span>?</h1>
+                <h2>New to Fantasy Cricket? Learn how to play and win!</h2>
+            </div>
+            <div id="fantasy-instructions-tab-div">
+                <div id="fantasy-instructions-tabs">
+                    <button class="tab" onclick="toggleTab(0)">
+                        <img src="icons/cricket.svg" alt="">
+                        <p class="active-tab-text">Basics</p>
+                        <div class="tab-line active-tab-line"></div>
+                    </button>
+                    <button class="tab" onclick="toggleTab(1)">
+                        <img src="icons/customize.svg" alt="">
+                        <p>Dashboard</p>
+                        <div class="tab-line"></div>
+                    </button>
+                    <button class="tab" onclick="toggleTab(2)">
+                        <img src="icons/tv.svg" alt="">
+                        <p>Games</p>
+                        <div class="tab-line"></div>
+                    </button>
+                    <button class="tab" onclick="toggleTab(3)">
+                        <img src="icons/math.svg" alt="">
+                        <p>Points</p>
+                        <div class="tab-line"></div>
+                    </button>
+                    <button class="tab" onclick="toggleTab(4)">
+                        <img src="icons/trophy.svg" alt="">
+                        <p>Winning</p>
+                        <div class="tab-line"></div>
+                    </button>
+                </div>
+                <div id="fantasy-instructions-content">
+                    <div class="fantasy-content active-content" id="content-1">
+                        <div class="fantasy-content-picture"></div>
+                        <div class="fantasy-content-text">
+                            <h1>Fantasy Basics</h1>
+                            <p>Fantasy Cricket is where you create your own team of players to play against your friends' teams in your league. You select your favorite players in the cricket draft orgainzed by the league manager. These players combine for a point total, and if your point total is higher than another players point total, you win the game. Players that win the most games go to the fantasy playoffs and then go onto win the Championship!</p>
+                        </div>
+                    </div>
+                    <div class="fantasy-content inactive-content" id="content-2">
+                        <div class="fantasy-content-picture"></div>
+                        <div class="fantasy-content-text">
+                            <h1>The Dashboard</h1>
+                            <p>The Dashboard will be where you can adjust your cricket lineup and do your league draft when it's decided on by your league manager. The Dashboard is an important part of your fantasy cricket experience, and will allow you to win games.</p>
+                        </div>
+                    </div>
+                    <div class="fantasy-content inactive-content" id="content-3">
+                        <div class="fantasy-content-picture"></div>
+                        <div class="fantasy-content-text">
+                            <h1>League Games/Roster</h1>
+                            <p>You will play games against other players in your league. Each of the players on your team and your opponents team will have to play a real-live cricket game once. When they all play, the points are calculated and then the winner of your fantasy game is declared.</p>
+                        </div>
+                    </div>
+                    <div class="fantasy-content inactive-content" id="content-4">
+                        <div class="fantasy-content-picture"></div>
+                        <div class="fantasy-content-text">
+                            <h1>The Points System</h1>
+                            <p>Each player you draft can be put a specific position, for example bowler, batsman, fielder, and keeper. A batsman's points are calculated by dividing the runs they score by 2. A bowlers score is calculated based on their economy, wickets, and extras. A fielder and keepers score is calculated based on their runouts, caught outs, and dropped catches</p>
+                        </div>
+                    </div>
+                    <div class="fantasy-content inactive-content" id="content-5">
+                        <div class="fantasy-content-picture"></div>
+                        <div class="fantasy-content-text">
+                            <h1>How To Win</h1>
+                            <p>You win by scoring more points and winning games. After winning games, the teams with the most points go into a bracket and play each other in a playoff-style, and the winner of this bracket becomes the league winner!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="instructions-camera-parent">
+                    <div class="camera-1"></div>
+                </div>
+            </div>
+        </div>
+        <div id="app-div">
+            <div id="phone-parent-div">
+                <div id="phone">
+                    <div id="camera-parent">
+                        <div class="camera"></div>
+                    </div>
+                    <p id="phone-time">00:00</p>
+                    <img src="icons/notifs.svg" alt="" id="phone-notifs">
+                    <img src="icons/battery.svg" alt="" id="phone-battery">
+                    <img src="icons/data.svg" alt="" id="phone-data">
+                    <div id="phone-application">
+                        <div id="phone-header"></div>
+                        <div id="phone-list-parent">
+                            <div class="phone-list">
+                                <div class="phone-face"></div>
+                                <div class="phone-headers">
+                                    <div class="phone-subheader"></div>
+                                    <div class="phone-header"></div>
+                                </div>
+                            </div>
+                            <div class="phone-list">
+                                <div class="phone-face"></div>
+                                <div class="phone-headers">
+                                    <div class="phone-subheader"></div>
+                                    <div class="phone-header"></div>
+                                </div>
+                            </div>
+                            <div class="phone-list">
+                                <div class="phone-face"></div>
+                                <div class="phone-headers">
+                                    <div class="phone-subheader"></div>
+                                    <div class="phone-header"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="phone-sentences">
+                            <div class="phone-title"></div>
+                            <div class="phone-subtitle"></div>
+                            <div class="phone-subtitle-div">
+                                <div class="phone-subtitle-div-1"></div>
+                                <div class="phone-subtitle-div-2"></div>
+                            </div>
+                            <div class="phone-subtitle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="feature-list-parent">
+                <h1>Premium Fantasy Experience <span class="accent-3">Guaranteed</span>!</h1>
+                <p>Cricket Fantasy League Mobile App Now Available!</p>
+                <div id="feature-button-div">
+                    <div class="feature-button">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Apple_logo_grey.svg/1200px-Apple_logo_grey.svg.png" alt="">
+                        <div class="download-div">
+                            <p class="feature-para">Download on the</p>
+                            <h1 class="feature-header">App Store</h1>
+                        </div>
+                    </div>
+                    <div class="feature-button">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Google_Play_Arrow_logo.svg/1200px-Google_Play_Arrow_logo.svg.png" alt="">
+                        <div class="download-div">
+                            <p class="feature-para">GET IT ON</p>
+                            <h1 class="feature-header">Google Play</h1>
+                        </div>
+                    </div>
+                    <div class="feature-button">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Microsoft_Store.svg/1200px-Microsoft_Store.svg.png" alt="">
+                        <div class="download-div">
+                            <p class="feature-para">Download on the</p>
+                            <h1 class="feature-header">Phone Store</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footer-column">
+                <h1>Cricket Fantasy League</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
